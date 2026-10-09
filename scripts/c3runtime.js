@@ -1347,10 +1347,27 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-		() => 50,
 		() => "CCM_button_sound",
 		() => 0,
-		() => ""
+		() => "",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "L");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "U");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "R");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "D");
+		},
+		() => 1,
+		() => "UDLR"
 ];
 
 

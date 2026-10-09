@@ -5,9 +5,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch,
 		C3.Plugins.Audio,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
-		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.Audio.Acts.PlayByName,
-		C3.Plugins.Audio.Acts.Play
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.Sprite.Acts.SetAnimFrame
 	];
 };
 self.C3_JsPropNameTable = [
@@ -17,8 +20,8 @@ self.C3_JsPropNameTable = [
 	{十字左: 0},
 	{十字下: 0},
 	{十字決定: 0},
-	{エンター: 0},
-	{バック: 0},
+	{右オレンジ: 0},
+	{左オレンジ: 0},
 	{Touch: 0},
 	{Audio: 0},
 	{中央下: 0},
@@ -26,7 +29,20 @@ self.C3_JsPropNameTable = [
 	{上右: 0},
 	{上左: 0},
 	{中央内右: 0},
-	{中央内左: 0}
+	{中央内左: 0},
+	{下中央: 0},
+	{下下: 0},
+	{下右上: 0},
+	{下右真ん中: 0},
+	{下右下: 0},
+	{下左上: 0},
+	{下左真ん中: 0},
+	{下左下: 0},
+	{重ね１: 0},
+	{重ねアキレス: 0},
+	{重ねライトニングランス: 0},
+	{CCMstate: 0},
+	{commandInput: 0}
 ];
 
 self.InstanceType = {
@@ -36,8 +52,8 @@ self.InstanceType = {
 	十字左: class extends self.ISpriteInstance {},
 	十字下: class extends self.ISpriteInstance {},
 	十字決定: class extends self.ISpriteInstance {},
-	エンター: class extends self.ISpriteInstance {},
-	バック: class extends self.ISpriteInstance {},
+	右オレンジ: class extends self.ISpriteInstance {},
+	左オレンジ: class extends self.ISpriteInstance {},
 	Touch: class extends self.IInstance {},
 	Audio: class extends self.IInstance {},
 	中央下: class extends self.ISpriteInstance {},
@@ -45,5 +61,16 @@ self.InstanceType = {
 	上右: class extends self.ISpriteInstance {},
 	上左: class extends self.ISpriteInstance {},
 	中央内右: class extends self.ISpriteInstance {},
-	中央内左: class extends self.ISpriteInstance {}
+	中央内左: class extends self.ISpriteInstance {},
+	下中央: class extends self.ISpriteInstance {},
+	下下: class extends self.ISpriteInstance {},
+	下右上: class extends self.ISpriteInstance {},
+	下右真ん中: class extends self.ISpriteInstance {},
+	下右下: class extends self.ISpriteInstance {},
+	下左上: class extends self.ISpriteInstance {},
+	下左真ん中: class extends self.ISpriteInstance {},
+	下左下: class extends self.ISpriteInstance {},
+	重ね１: class extends self.ISpriteInstance {},
+	重ねアキレス: class extends self.ISpriteInstance {},
+	重ねライトニングランス: class extends self.ISpriteInstance {}
 }
