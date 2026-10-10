@@ -1356,18 +1356,44 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "R");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "E");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + "U");
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + "R");
+			return () => (v0.GetValue() + "C");
 		},
+		() => "ELRRUC",
+		() => 6,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + "D");
 		},
 		() => 1,
-		() => "UDLR"
+		() => -3,
+		() => 3.5,
+		() => 5,
+		() => "UDL",
+		() => 10,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
+		() => -12,
+		() => "BGM",
+		() => 2,
+		() => -8,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (3 - v0.GetValue());
+		}
 ];
 
 

@@ -10,7 +10,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.Sprite.Acts.SetAnimFrame
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.Audio.Acts.Stop
 	];
 };
 self.C3_JsPropNameTable = [
@@ -41,8 +42,17 @@ self.C3_JsPropNameTable = [
 	{重ね１: 0},
 	{重ねアキレス: 0},
 	{重ねライトニングランス: 0},
+	{重ね敵機でくー: 0},
+	{重ね超プラズマ: 0},
+	{重ねVモード: 0},
+	{重ねCCM変形アキレス: 0},
 	{CCMstate: 0},
-	{commandInput: 0}
+	{commandInput: 0},
+	{soundPlaying: 0},
+	{ImageLock: 0},
+	{CommandInput2: 0},
+	{BGMNumber: 0},
+	{BGMPreviousState: 0}
 ];
 
 self.InstanceType = {
@@ -72,5 +82,9 @@ self.InstanceType = {
 	下左下: class extends self.ISpriteInstance {},
 	重ね１: class extends self.ISpriteInstance {},
 	重ねアキレス: class extends self.ISpriteInstance {},
-	重ねライトニングランス: class extends self.ISpriteInstance {}
+	重ねライトニングランス: class extends self.ISpriteInstance {},
+	重ね敵機でくー: class extends self.ISpriteInstance {},
+	重ね超プラズマ: class extends self.ISpriteInstance {},
+	重ねVモード: class extends self.ISpriteInstance {},
+	重ねCCM変形アキレス: class extends self.ISpriteInstance {}
 }
