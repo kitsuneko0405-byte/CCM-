@@ -4,6 +4,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite,
 		C3.Plugins.Touch,
 		C3.Plugins.Audio,
+		C3.Plugins.video,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.Audio.Acts.PlayByName,
 		C3.Plugins.System.Acts.SetVar,
@@ -11,7 +12,17 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.Wait,
-		C3.Plugins.Audio.Acts.Stop
+		C3.Plugins.video.Acts.SetVisible,
+		C3.Plugins.video.Acts.Play,
+		C3.Plugins.video.Acts.SetVolume,
+		C3.Plugins.video.Cnds.HasEnded,
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.Touch.Cnds.IsInTouch,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.Touch.Exps.X,
+		C3.Plugins.Touch.Exps.Y,
+		C3.Plugins.Touch.Cnds.OnTouchEnd
 	];
 };
 self.C3_JsPropNameTable = [
@@ -46,6 +57,9 @@ self.C3_JsPropNameTable = [
 	{重ね超プラズマ: 0},
 	{重ねVモード: 0},
 	{重ねCCM変形アキレス: 0},
+	{タッチエフェクト: 0},
+	{ライトニングランス動画: 0},
+	{超プラズマ動画: 0},
 	{CCMstate: 0},
 	{commandInput: 0},
 	{soundPlaying: 0},
@@ -86,5 +100,8 @@ self.InstanceType = {
 	重ね敵機でくー: class extends self.ISpriteInstance {},
 	重ね超プラズマ: class extends self.ISpriteInstance {},
 	重ねVモード: class extends self.ISpriteInstance {},
-	重ねCCM変形アキレス: class extends self.ISpriteInstance {}
+	重ねCCM変形アキレス: class extends self.ISpriteInstance {},
+	タッチエフェクト: class extends self.ISpriteInstance {},
+	ライトニングランス動画: class extends self.IWorldInstance {},
+	超プラズマ動画: class extends self.IWorldInstance {}
 }
