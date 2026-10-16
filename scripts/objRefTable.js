@@ -13,6 +13,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.video.Acts.SetVisible,
+		C3.Plugins.video.Acts.Pause,
+		C3.Plugins.video.Acts.SetPlaybackTime,
 		C3.Plugins.video.Acts.Play,
 		C3.Plugins.video.Acts.SetVolume,
 		C3.Plugins.video.Cnds.HasEnded,
