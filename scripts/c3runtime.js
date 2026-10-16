@@ -1396,10 +1396,6 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + "L");
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + "E");
 		},
 		p => {
@@ -1417,12 +1413,16 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + "D");
 		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + "L");
+		},
 		() => 1,
 		() => -3,
 		() => 3.5,
 		() => 5,
 		() => 4,
-		() => "UDL",
+		() => "UD",
 		() => 10,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
